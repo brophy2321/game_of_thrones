@@ -3,7 +3,8 @@
 <ul>
   <% @houses.each do |house| %>
 
-        <%= house.name %>
-
+        <li> <%= house.name %>
+            <img src = "<%= house.img_url %>"/>
+        </li>
   <% end %>
 </ul>

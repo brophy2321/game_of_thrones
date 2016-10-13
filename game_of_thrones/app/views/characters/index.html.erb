@@ -5,8 +5,11 @@
   <% @characters.each do |character| %>
 
 
-        <%= character.name %>
+      <li>   <%= character.name %>
+        <%= character.house %>
+        <%= character.deceased %>
+      
+      </li>
 
-  
   <% end %>
 </ul>
