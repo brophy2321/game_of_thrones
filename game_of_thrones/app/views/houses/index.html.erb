@@ -1,0 +1,12 @@
+<h1>Characters#index</h1>
+<h1>Houses<a href="/houses/new">(+)</a></h1>
+
+<ul>
+  <% @houses.each do |house| %>
+    <li>
+      <a href="/houses<%= house.id %>">
+        <%= house.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>

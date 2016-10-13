@@ -1,2 +1,12 @@
-<h1>Characters#index</h1>
-<p>Find me in app/views/characters/index.html.erb</p>
+
+<h1>Characters <a href="/characters/new">(+)</a></h1>
+
+<ul>
+  <% @characters.each do |character| %>
+    <li>
+      <a href="/characters/<%= character.id %>">
+        <%= character.name %>
+</a>
+    </li>
+  <% end %>
+</ul>
